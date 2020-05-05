@@ -4,6 +4,11 @@ spring:
   cloud:
     config:
       override-none: true 
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: root
+    password: root
 #默认配置中心配置优先级高,配置中心配置会覆盖客户端的所有配置,
 #包括命令行参数配置,这样我们在item-service和order-service中配置的端口号启动参数会无效   
 
